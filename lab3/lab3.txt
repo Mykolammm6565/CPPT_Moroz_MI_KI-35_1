@@ -1,0 +1,5 @@
+Printing: Some text
+Paper content: Some text
+Remain paint: 99
+Cartridge pollution: 0
+Adding 1 papers...
