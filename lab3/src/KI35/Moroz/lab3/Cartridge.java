@@ -11,9 +11,11 @@ private int MAX_POLLUTION = 100;
  * Constructor
  * @param color cartridge color
  */
-public Cartridge(Color color)
+public Cartridge(){}
+public Cartridge(Color color) //int remainPaint
 {
-    this.color = color;
+    this.color = color; 
+    //this.remainPaint = remainPaint;
 }
 /**
  * Method prints text
@@ -55,6 +57,10 @@ public void clear()
 public int getPollution()
 {
     return pollutionValue;
+}
+public Color getColor()
+{
+    return color;
 }
 }
 
