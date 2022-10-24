@@ -14,7 +14,7 @@ public class AppPrinter {
     public static void main(String[] args) throws Exception
     {
         MultifunctionalDevice device = new MultifunctionalDevice();
-
+        device.Test1();
         device.printText("Some text");
 
         Paper paper = device.getPaper();

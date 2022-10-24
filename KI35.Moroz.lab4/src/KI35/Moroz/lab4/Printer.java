@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @version 1.0
  */
 
-public class Printer {
+public abstract class Printer {
 	PrintWriter fout;
     private String file = "lab4.txt";
 
