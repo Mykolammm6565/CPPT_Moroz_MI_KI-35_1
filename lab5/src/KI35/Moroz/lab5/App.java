@@ -10,8 +10,13 @@ public class App {
      */
     public static void main(String[] args)
     {
-        try
+     double y;
+    	try
         {
+    		y=-2/0;
+        	if (y==Double.NEGATIVE_INFINITY || y==Double.POSITIVE_INFINITY) {
+        		throw new ArithmeticException();
+        	}
             out.print("Enter file name: ");
             Scanner in = new Scanner(System.in);
             String fName = in.nextLine();
@@ -38,6 +43,10 @@ public class App {
         catch (FileNotFoundException ex)
         {
             out.print("Exception reason: Perhaps wrong file path");
+        }
+        catch (ArithmeticException ae){
+            System.out.println("Arithmetic Exception! Dividing by zero");
+                
         }
     }
 }
