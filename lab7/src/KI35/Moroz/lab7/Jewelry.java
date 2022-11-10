@@ -8,6 +8,8 @@ public class Jewelry {
     private String material;
     private String name;
     private String brand;
+    public static int count = 0;
+    public static int count1 = 0;
 
     /**
      * Constructor
@@ -22,7 +24,9 @@ public class Jewelry {
         this.material = material;
         this.brand = brand;
         this.weight = weight;
-    }
+        if (this.material=="Gold") {count++;}
+    if (this.material=="Silver") {count1++;}}
+    
     /**
      * Method prints data
      */
